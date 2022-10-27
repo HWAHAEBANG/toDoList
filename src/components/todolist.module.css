@@ -1,0 +1,149 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightpink;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 8px 10px 21px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  border-bottom: 3px solid white;
+  background-color: #f8bbd0;
+  color: white;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 5px gray;
+}
+
+.header > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  line-height: 0;
+}
+
+.menu > li {
+  margin: 0 15px;
+  padding: 10px 5px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+}
+
+.menu > li:focus {
+  border-color: white;
+}
+
+.modeBtn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.modeBtn:hover {
+  transform: scale(1.5);
+}
+
+.contents {
+  height: 75%;
+  padding: 7px 20px;
+  overflow-y: scroll;
+  background-color: #eeeeee;
+}
+
+.contents::-webkit-scrollbar {
+  display: none;
+}
+
+.contents > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contents > ul > li {
+  line-height: 50px;
+}
+
+.contents > ul > li > div {
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.contents > ul > li > div > button {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  width: 26px;
+  height: 26px;
+  background-color: darkgray;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  padding-top: 3px;
+}
+
+.contents > ul > li > div > button:hover {
+  transform: rotate(30deg);
+  transition: all 0.1s ease-in;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f8bbd0;
+}
+
+.input {
+  width: 470px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.addBtn {
+  width: 100px;
+  height: 40px;
+  border: 0;
+  background-color: #c48b9f;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0;
+}
+
+.addBtn:hover {
+  background-color: palevioletred;
+}
